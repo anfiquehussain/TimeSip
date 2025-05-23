@@ -1,6 +1,4 @@
-Here's a professional `README.md` for your TimeSip project that explains its purpose, features, setup, and usage:
 
-```markdown
 # 🕒 TimeSip - Elegant Desktop Reminder Application
 
 ![TimeSip Screenshot](icons/screenshot.png) *(Add screenshot later)*
@@ -28,7 +26,7 @@ TimeSip is a beautiful cross-platform desktop application for setting customizab
    ```bash
    git clone https://github.com/yourusername/timesip.git
    cd timesip
-   ```
+
 
 2. Create and activate virtual environment:
    ```bash
