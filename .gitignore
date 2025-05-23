@@ -1,0 +1,39 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# PyInstaller build artifacts
+build/
+dist/
+*.spec
+
+# Installer logs and backups
+*.log
+*.bak
+
+# MacOS-specific files
+.DS_Store
+
+# Windows-specific files
+Thumbs.db
+desktop.ini
+
+# Virtual environments
+env/
+venv/
+ENV/
+.venv/
+
+# VSCode, PyCharm and other IDEs
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# Compiled Qt UI files (if any)
+*.ui.py
