@@ -1,116 +1,54 @@
+# ⏱️ TimeSip
 
-# 🕒 TimeSip - Elegant Desktop Reminder Application
-
-![TimeSip Screenshot](icons/screenshot.png) *(Add screenshot later)*
-
-TimeSip is a beautiful cross-platform desktop application for setting customizable reminders with a sleek modern interface.
-
-## ✨ Features
-
-- ⏰ Set reminders in seconds, minutes, hours, days, months, or years
-- 💬 Custom reminder messages with persistent notifications
-- 🔄 Restart or snooze reminders directly from popups
-- 🎨 Stylish dark theme with smooth animations
-- 🗃️ System tray integration (minimizes to tray)
-- 🔔 Visual and audio alerts when reminders trigger
-- 🖥️ Full-screen reminder popups that demand attention
-
-## 🛠️ Installation
-
-### Prerequisites
-- Python 3.8+
-- pip
-
-### Steps
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/timesip.git
-   cd timesip
-
-
-2. Create and activate virtual environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # Linux/Mac
-   venv\Scripts\activate     # Windows
-   ```
-
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. Run the application:
-   ```bash
-   python timesip.py
-   ```
-
-## 🖥️ Usage
-
-1. **Set Duration**:
-   - Enter a number and select time units (minutes by default)
-
-2. **Add Message**:
-   - Type your reminder message ("Time's up!" by default)
-
-3. **Start Reminder**:
-   - Click "🚀 Start Reminder" button
-   - The countdown will appear with remaining time
-
-4. **When Reminder Triggers**:
-   - Full-screen popup appears with your message
-   - Options to:
-     - 🔄 Restart original timer
-     - ⏸️ Snooze for 5 minutes
-     - ✅ Close reminder
-
-## 🎨 Customization
-
-Edit `app/style.py` to modify:
-- Color schemes
-- Font sizes
-- Button styles
-- Popup appearance
-
-## 📦 Packaging (Optional)
-
-To create a standalone executable:
-
-```bash
-pip install pyinstaller
-pyinstaller --onefile --windowed --icon=icons/app_icon.ico timesip.py
-```
-
-## 🤝 Contributing
-
-Contributions welcome! Please fork the repository and submit pull requests.
-
-## 📜 License
-
-MIT License - See [LICENSE](LICENSE) for details.
+**TimeSip** is a minimalist and powerful desktop reminder application built with PyQt5. It helps you set reminders effortlessly and stay on track with tasks by offering full-screen alerts, snooze functionality, and tray integration.
 
 ---
 
-💡 **Tip**: Use the system tray icon to quickly restore the application if minimized.
+## 🚀 Features
+
+- ⏰ Set reminders in seconds, minutes, hours, days, months, or years  
+- 💬 Custom reminder messages  
+- 🔄 Restart or snooze reminders directly from popups  
+- 🖥️ Full-screen popup alerts that grab your attention  
+- 🗃️ System tray integration – minimizes to tray on close  
+
+---
+
+## 🧰 Tech Stack
+
+Built with:
+
+- `PyQt5` for the UI  
+- `PyInstaller` for packaging into an executable  
+- `pefile`, `pywin32-ctypes` for Windows-specific support  
+- Cross-platform support with clean modular structure
+
+## 📦 Installation
+### Clone the repo
+```
+git clone https://github.com/anfiquehussain/TimeSip.git
+```
+```
+cd TimeSip
 ```
 
-Key elements included:
-1. Clear project name/logo space
-2. Feature highlights with emojis
-3. Detailed installation instructions
-4. Step-by-step usage guide
-5. Customization notes
-6. Packaging instructions
-7. Contribution guidelines
-8. License information
-
-To complete your README:
-1. Add actual screenshot (replace `icons/screenshot.png`)
-2. Update repository URL
-3. Add your license file
-4. Consider adding:
-   - Roadmap/Future Features section
-   - Troubleshooting tips
-   - Credits/acknowledgments
-
-Would you like me to modify any specific section or add more details about particular features?
+### Create a virtual environment
+```
+python -m venv venv
+```
+```
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+### Install dependencies
+```
+pip install -r requirements.txt
+```
+### Run the app
+```
+python main.py
+```
+## 💡 Roadmap
+- Sound alert option
+- Multi-reminder support
+- Reminder history/logs
+- Auto-start on boot (Windows/Mac)
